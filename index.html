@@ -5,56 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scootering</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
-              <li class="nav-item">
-                <a class="nav-link px-2 text-dark" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-2 text-dark" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link px-2 text-dark">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-2 text-dark">Disabled</a>
-              </li>
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3 border-bottom">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+          <li class="nav-item">
+            <a class="navbar-brand nav-link px-2 text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-light" href="#">Map</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Scoot</a></li>
+              <li><a class="dropdown-item" href="#">Skateboard</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Skateparks</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div class="card container" style="">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-light">About us</a>
+          </li>
+        </ul>
+        <div class="col-md-3 text-end text-light ">
+          <button type="button" class="btn btn-outline-light me-2"><a href="./odrážky/login.html">
+          Log in</a>
+          </button>
+          <button type="button" class="btn btn-light"><a href="./odrážky/register.html">Sign in</a></button>
         </div>
       </div>
-    <div class= "container">
-        <div class = "row bg-danger">
-            <div class = "col">ajook</div>
-            <div class = "col">ajook</div>
-            <div class = "col">ajook</div>
-            <div class = "col">ajook</div>
+    </div>
+  </nav>
+
+  <div class="bg-image border-bottom"
+    style="background-image: url('./images/venice.jpg'); background-repeat: no-repeat; height: 100vh;background-size:cover;">
+    <div class="px-4 py-5 my-5 text-center">
+      <img src="" alt="">
+      <h1 class="display-5 fw-bold mt-4">The world’s best skateparks</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-dark btn-lg px-4 gap-3">Primary button</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
         </div>
+      </div>
+    </div>
+    <div class="container mt-">
+      <div class="row row-cols-1 row-cols-md-3 g-2">
+        <div class="col">
+          <div class="card">
+            <img src="./images/corby.jpg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+            <div class="card-body">
+              <h5 class="card-title">Adrenaline alley</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/venis-skatepark.jpg" class="card-img-top" alt="Palm Springs Road"/>
+            <div class="card-body">
+              <h5 class="card-title">Venice beach skatepark</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/woodward.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+            <div class="card-body">
+              <h5 class="card-title">Woodward skatepark</h5>
+              <p class="card-text">Skatepark Pardubice je jeden z největších skateparků v České republice.</p>
+            </div>
+          </div>
+        </div>¨
+      </div>
+    </div>
+    <div class="px-4 py-4 my-5 text-center text-light">
+      <img src="" alt="">
+      <h1 class="display-5 fw-bold mt-4">The best skateparks in Czech republic</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-2">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      </div>
+    </div>
+    <div class="p-3 mb-2 bg-dark">
+      <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner container rounded-2 shadow" style="height: 700px; width: 1300px;">
+          <div class="carousel-item active shadow">
+            <img src="./images/pce.jpg" class="d-block w-100 rounded-2" alt="Skatepark Pardubice">
+            <div class="carousel-caption d-none d-md-block text-end h-50 text-light">
+              <h2 class="fs-1">Pardubice</h2>
+              <p class="fs-5">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item shadow">
+            <img src="./images/gutovka.jpg" class="d-block w-100 rounded-2" alt="Gutovka">
+            <div class="carousel-caption d-none d-md-block text-end h-50 text-light">
+              <h2 class="fs-1">Praha Gutovka</h2>
+              <p class="fs-5">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item shadow">
+            <img src="./images/stráž.jpg" class="d-block w-100 rounded-2" alt="stráž">
+            <div class="carousel-caption d-none d-md-block text-end h-50 text-light">
+              <h2 class="fs-1">Stráž pod Ralskem</h2>
+              <p class="fs-5">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      <div class="container">
+        <footer class="py-5 main-footer">
+          <div class="row">
+            <div class="col-sm">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-4 offset-1 text-light">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-outline-light" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top text-light">
+            <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </div>
 </body>
 </html>
